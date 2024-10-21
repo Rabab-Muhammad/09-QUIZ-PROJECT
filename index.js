@@ -36,42 +36,42 @@ const quiz = await inquirer.prompt([
 let score = 0;
 switch (quiz.question1) {
     case "a !== b":
-        console.log(chalk.bold.bgGreen("1. Correct!"));
+        console.log(chalk.bold.green("\n1. Correct!"));
         ++score;
         break;
     default:
-        console.log(chalk.bold.bgRed("1. Incorrect"));
+        console.log(chalk.bold.red("\n1. Incorrect"));
 }
 switch (quiz.question2) {
     case "boolean":
-        console.log(chalk.bold.bgCyan("2. Correct!"));
+        console.log(chalk.bold.cyan("2. Correct!"));
         ++score;
         break;
     default:
-        console.log(chalk.bold.bgMagenta("2. Incorrect"));
+        console.log(chalk.bold.magenta("2. Incorrect"));
 }
 switch (quiz.question3) {
     case "Declare a block-scoped variable":
-        console.log(chalk.bold.bgYellow("3. Correct!"));
+        console.log(chalk.cyan("3. Correct!"));
         ++score;
         break;
     default:
-        console.log(chalk.bold.bgBlue("3. Incorrect"));
+        console.log(chalk.green("3. Incorrect"));
 }
 switch (quiz.question4) {
     case "Checks the type of a variable":
-        console.log(chalk.bold.bgBlueBright("4. Correct!"));
+        console.log(chalk.bold.blue("4. Correct!"));
         ++score;
         break;
     default:
-        console.log(chalk.bold.bgRedBright("4. Incorrect"));
+        console.log(chalk.red("4. Incorrect"));
 }
 switch (quiz.question5) {
     case "as":
-        console.log(chalk.bold.bgGreenBright("5. Correct!"));
+        console.log(chalk.yellow("5. Correct!"));
         ++score;
         break;
     default:
-        console.log(chalk.bold.bgYellowBright("5. Incorrect"));
+        console.log(chalk.white("5. Incorrect"));
 }
-console.log(chalk.bold.bgWhite.black(`score: ${score}`));
+console.log(chalk.bold.white(`score: ${score}`));

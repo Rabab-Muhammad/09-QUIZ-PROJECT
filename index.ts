@@ -46,11 +46,11 @@ let score:number = 0;
 
 switch (quiz.question1) {
     case "a !== b":
-        console.log(chalk.bold.green("1. Correct!"));
+        console.log(chalk.bold.green("\n1. Correct!"));
         ++score;
         break;
         default:
-            console.log(chalk.bold.red("1. Incorrect"));    
+            console.log(chalk.bold.red("\n1. Incorrect"));    
 }
 
 switch (quiz.question2) {
@@ -89,7 +89,7 @@ switch (quiz.question5) {
             console.log(chalk.white("5. Incorrect"));    
 }
 
-console.log(chalk.bold.black(`score: ${score}`));
+console.log(chalk.bold.white(`score: ${score}`));
 
 
 
