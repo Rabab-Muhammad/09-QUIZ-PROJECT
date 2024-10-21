@@ -1,6 +1,6 @@
 {
   "name": "@ra5243/09-quiz-project",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "This is a simple-quiz-project",
   "main": "index.js",
   "type": "module",
